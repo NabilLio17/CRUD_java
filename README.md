@@ -27,40 +27,15 @@
 
 **- Main.java:** File utama untuk menjalankan aplikasi
 
-### KONFIGURASI DATABASE DI MYSQL
+### Buat database di php terlebih dahulu dengan nama database "akademik"
 
-**- #mysql -h127.0.0.1 -uroot**
-
-```
-CREATE DATABASE akademik;
-```
-```
-USE akademik;
-```
-```
-CREATE TABLE mahasiswa (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nim VARCHAR(20) NOT NULL UNIQUE,
-    nama VARCHAR(100) NOT NULL,
-    jurusan VARCHAR(50) NOT NULL,
-    angkatan VARCHAR(100) NOT NULL
-);
-```
-```
-CREATE TABLE nilai (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    mahasiswa_id INT NOT NULL,
-    mata_kuliah VARCHAR(100) NOT NULL,
-    semester INT NOT NULL,
-    nilai CHAR(2),
-    FOREIGN KEY (mahasiswa_id) REFERENCES mahasiswa(id)
-    ON DELETE CASCADE
-);
-```
+![image](ft/data1.png)
+![image](ft/data2.png)
+<hr><hr>
 
 ## PENJELASAN SETIAP PACKAGE DAN FILE
 
-### Package Classes:
+## Package Classes:
 
 #### BaseModel.java
 
@@ -1201,10 +1176,10 @@ Aplikasi menggunakan Swing untuk GUI dan MySQL untuk database.
 
 - Form Mahasiswa
 
-![image](ss/outputmhs.png)
+![image](ft/hasil1.png)
 
 - Form Nilai
 
-![image](ss/outputnilai.png)
+![image](ft/hasil2.png)
 
 ## Selesai
