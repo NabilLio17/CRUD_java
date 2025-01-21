@@ -15,7 +15,6 @@
 
 **- Proyek ini menggunakan arsitektur MVC (Model-View-Controller) dengan struktur folder:**
 
-![image](ss/struktur1.png)
 
 **- classes:** Berisi kelas-kelas dasar dan utilitas
 
@@ -27,7 +26,10 @@
 
 **- Main.java:** File utama untuk menjalankan aplikasi
 
-### Buat database di php terlebih dahulu dengan nama database "akademik"
+## pertama kita perlu memasukan file mysql_connector tepat seperti pada gambar dibawah ini
+![image](ft/awal.png)
+
+### lalu kemudian Buat database di php terlebih dahulu dengan nama database "akademik"
 
 ![image](ft/data1.png)
 ![image](ft/data2.png)
